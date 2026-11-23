@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3</title>
+    <style>
+        h1 { font-size: 32px; font-family: Arial, sans-serif; color: rgb(0, 0, 142); margin: 0; }
+        h2 { font-size: 24px; font-family: Verdana, sans-serif; color: yellow; margin: 0; }
+
+        /* ===== Bagian Alumni ===== */
+        #alumni { font-family: Arial, sans-serif; margin-top: 30px; }
+
+        #cari {
+            width: 100%;
+            max-width: 400px;
+            padding: 8px 12px;
+            font-size: 16px;
+            border: 2px solid rgb(0, 0, 142);
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+
+        #info { color: #555; margin-bottom: 15px; }
+
+        #daftar-alumni {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .kartu-alumni {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+        }
+
+        /* Efek hover pada profil alumni */
+        .kartu-alumni:hover {
+            transform: translateY(-6px);
+            background-color: rgb(0, 0, 142);
+            color: white;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .kartu-alumni h3 { margin: 0 0 5px 0; }
+        .kartu-alumni p { margin: 3px 0; }
+    </style>
+</head>
+
+<body>
+    <h1>Fakultas Ilmu Komputer</h1>
+    <h2>Universitas Kuningan</h2>
+    <p>
+        Alamat: Jl. Pramuka No.67, Purwawinangun,
+        Kec. Kuningan, Kabupaten Kuningan, Jawa Barat 45512
+    </p>
+    <hr>
+    <main>
+        <div>
+            <article>
+                <div>
+                    <img src="Image/SI-1-1-768x137.png" alt="">
+                    <h1>Sistem Informasi</h1>
+                    <div><b>VISI</b></div>
+                    Terwujudnya program studi sistem informasi sebagai program studi yang handal dan unggul
+                    dalam penyelenggaraan Tri Darma Perguruan Tinggi, unggul di bidang
+                    rekayasa sistem informasi di Wilayah Jawa Barat pada tahun 2032.
+                    <div><b><i>PROFIL LULUSAN & PILIHAN KARIR</i></b></div>
+                    System Analyst, Data Analyst, Chief In formation Officer (CIO), Software Quality Assurance.
+                    <div><b><u>KEGIATAN MBKM</u></b></div>
+                    <ul>
+                        <li>Magang</li>
+                        <li>Studi Independen</li>
+                        <li>Bangkit Academy</li>
+                        <li>Pertukaran Mahasiswa Merdeka (PMM) Nusantara</li>
+                        <li>International Credit Transfer (ICT)</li>
+                    </ul>
+                    <div><b><u><i>PROGRAM UNGGULAN</i></u></b></div>
+                    <ul type="square">
+                        <li>Pertukaran Mahasiswa ke University Utara Malaysia (UUM)</li>
+                        <li>Praktisi/Dosen Kompetensi dari Universitas lain</li>
+                    </ul>
+                    <div><strong>PRESTASI MAHASISWA</strong></div>
+                    <ul type="circle">
+                        <li>Juara 1 lomba Desain Cindramata 2018</li>
+                        <li>Juara Favorit lomba poster STIKKU 2017</li>
+                        <li>Mahasiswa Berprestasi UNIKU 2022</li>
+                        <li>Duta Putra Sosial Kuningan 2022</li>
+                        <li>Juara Lomba LLDIKTI Konsep Garapan Terbaik Tingkat Jabar-Banten 2022</li>
+                        <li>PPK Ormawa</li>
+                    </ul>
+                    <div>SERTIFIKASI</div>
+                    <img src="Image/BNSP-1024x83.png" alt="">
+                </div>
+
+                <div>
+                    <h1>Teknik Informatika</h1>
+                    <div><b>VISI</b></div>
+                    Mengembangkan keilmuan Teknik Informatika bidang Rekayasa Perangkat Lunak, Pengolahan Citra dan Kecerdasan buatan untuk menghasilkan lulusan yang unggul, andal, dan berdaya saing, serta berkomitmen tinggi terhadap pemberdayaan masyarakat pada tahun 2035
+                    <div><b><i>PROFIL LULUSAN & PILIHAN KARIR</i></b></div>
+                    software engineer, AI specialist, dan tech lead.
+                    <div><b><u>KEGIATAN MBKM</u></b></div>
+                    <ul>
+                        <li>magang bersertifikat satu sampai dua semester di perusahaan teknolog</li>
+                        <li>Studi Independen</li>
+                        <li>Bangkit Academy</li>
+                        <li>Pertukaran Mahasiswa Merdeka (PMM) Nusantara</li>
+                        <li>Kampus Mengajar</li>
+                    </ul>
+                    <div><b><u><i>PROGRAM UNGGULAN</i></u></b></div>
+                    <ul type="square">
+                        <li>student mobility ke Universiti Utara Malaysia (UUM) dan tiga pilar</li>
+                        <li>Praktisi/Dosen Kompetensi dari Universitas lain</li>
+                    </ul>
+                    <div><strong>PRESTASI MAHASISWA</strong></div>
+                    <ul type="circle">
+                        <li>Haby Triyandani menjuarai Mahasiswa Berprestasi Universitas Kuningan 2024 dan FKOM meraih juara 1 nasional lomba web pada 2023. </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Desain Komunikasi Visual</h1>
+                    <div><b>VISI</b></div>
+                    Menjadi Program Studi Desain Komunikasi Visual yang unggul, tumbuh, dan berdampak dalam menghasilkan lulusan dan inovasi berkelanjutan di bidang media digital dan industri kreatif berbasis kearifan lokal, bereputasi nasional dan berekognisi internasional dalam pemberdayaan masyarakat.
+                    <div><b><i>PROFIL LULUSAN & PILIHAN KARIR</i></b></div>
+                    creative director, UI/UX designer, dan animator.
+                    <div><b><u>KEGIATAN MBKM</u></b></div>
+                    <ul>
+                        <li>m4 mahasiswa DKV lolos program MSIB Batch 2. Program lain sama dengan tingkat fakultas</li>
+                    </ul>
+                    <div><b><u><i>PROGRAM UNGGULAN</i></u></b></div>
+                    <ul type="square">
+                        <li>pameran tahunan DKV dan studio animasi serta fotografi. </li>
+                    </ul>
+                    <div><strong>PRESTASI MAHASISWA</strong></div>
+                    <ul type="circle">
+                        <li>karya mahasiswa dan dosen DKV akan ditampilkan di Korea Selatan (2023). Daftar lomba lain tidak ketemu.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Teknik Sipil</h1>
+                    <div><b><i>PROFIL LULUSAN & PILIHAN KARIR</i></b></div>
+                    Kementerian PUPR, BUMN Karya, konsultan perencana, dan kontraktor.
+                    <div><b><u>KEGIATAN MBKM</u></b></div>
+                    <ul>
+                        <li>-</li>
+                    </ul>
+                    <div><b><u><i>PROGRAM UNGGULAN</i></u></b></div>
+                    <ul type="square">
+                        <li>kuliah pakar internasional tentang AI dalam transportasi cerdas.</li>
+                    </ul>
+                    <div><strong>PRESTASI MAHASISWA</strong></div>
+                    <ul type="circle">
+                        <li>hibah PPK Ormawa untuk pemetaan dan mitigasi longsor di Desa Pajambon.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <section id="alumni">
+                <hr>
+                <h1>Alumni</h1>
+                <input type="text" id="cari" placeholder="Cari nama atau jurusan...">
+                <p id="info"></p>
+                <div id="daftar-alumni"></div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const dataAlumni = [
+            { nama: "Nazwa Dwifa Ramadani", jurusan: "Sistem Informasi", angkatan: 2020, pekerjaan: "Data Analyst Samsung" },
+            { nama: "James", jurusan: "Sistem Informasi", angkatan: 2020, pekerjaan: "System Analyst" },
+            { nama: "Asa", jurusan: "Teknik Informatika", angkatan: 2019, pekerjaan: "Software Engineer" },
+            { nama: "Anna", jurusan: "Teknik Informatika", angkatan: 2017, pekerjaan: "AI Specialist" },
+            { nama: "Kono", jurusan: "Desain Komunikasi Visual", angkatan: 2018, pekerjaan: "UI/UX Designer" },
+            { nama: "Martin", jurusan: "Desain Komunikasi Visual", angkatan: 2019, pekerjaan: "Animator" },
+            { nama: "Haikal", jurusan: "Teknik Sipil", angkatan: 2017, pekerjaan: "Konsultan Perencana" },
+            { nama: "Sena", jurusan: "Teknik Sipil", angkatan: 2018, pekerjaan: "Staf Kementerian PUPR" }
+        ];
+
+        const daftar = document.getElementById("daftar-alumni");
+        const kotakCari = document.getElementById("cari");
+        const info = document.getElementById("info");
+
+        function tampilkanAlumni(data) {
+            daftar.innerHTML = "";
+
+            for (let i = 0; i < data.length; i++) {
+                const a = data[i];
+                daftar.innerHTML +=
+                    '<div class="kartu-alumni">' +
+                    '<h3>' + a.nama + '</h3>' +
+                    '<p>' + a.jurusan + '</p>' +
+                    '<p>Angkatan ' + a.angkatan + '</p>' +
+                    '<p>' + a.pekerjaan + '</p>' +
+                    '</div>';
+            }
+
+            if (data.length === 0) {
+                info.textContent = "Alumni tidak ditemukan.";
+            } else {
+                info.textContent = "Menampilkan " + data.length + " alumni";
+            }
+        }
+
+        kotakCari.addEventListener("input", function () {
+            const kataKunci = kotakCari.value.toLowerCase();
+
+            const hasil = dataAlumni.filter(function (a) {
+                return a.nama.toLowerCase().includes(kataKunci) ||
+                       a.jurusan.toLowerCase().includes(kataKunci);
+            });
+
+            tampilkanAlumni(hasil);
+        });
+
+        tampilkanAlumni(dataAlumni);
+    </script>
+</body>
+
+</html>
